@@ -5,10 +5,10 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class QuizService  {
-    urlQuestions = 'https://quiz-milhao.herokuapp.com/perguntas/';
-    urlThemes = 'https://quiz-milhao.herokuapp.com/temas';
-    urlAdd = 'https://quiz-milhao.herokuapp.com/ranking/adicionar';
-    urlRank = 'https://quiz-milhao.herokuapp.com/ranking/';
+    urlQuestions = 'https://quiz-milhao.herokuapp.com/api/perguntas/';
+    urlThemes = 'https://quiz-milhao.herokuapp.com/api/temas';
+    urlAdd = 'https://quiz-milhao.herokuapp.com/api/ranking/adicionar';
+    urlRank = 'https://quiz-milhao.herokuapp.com/api/ranking/';
 
     constructor(
         private http: HttpClient
