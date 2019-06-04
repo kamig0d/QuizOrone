@@ -1,0 +1,263 @@
+@import '../../sass/variables/_variables';
+
+// $sport-color: #00FF00;
+// $anime-color: #00FFFF;
+// $serie-color: #FFFF;
+// $movie-color: #FF0000;
+// $princess-color: #FF00FF;
+// $heroes-color: #FFFF00;
+// $games-color: #FF9C00;
+// $music-color: #FF1493;
+
+.home {
+	padding: 2.22% !important;
+	background-image: url(../../images/press-start.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  	background-position: center;
+	background-size: cover; 
+	margin-top: 55px;
+	min-height: 57.1em;
+	filter: brightness(30%);
+}
+
+.ranking {
+	padding: 2.22% !important;
+	background-image: url(../../images/press-start.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  	background-position: center;
+	background-size: cover; 
+	margin-top: 55px;
+	filter: brightness(30%);
+	min-height: 57.1em;
+}
+
+.questions {
+	padding: 2.22% !important;
+	background-image: url(../../images/press-start.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  	background-position: center;
+	background-size: cover; 
+	margin-top: 55px;
+	filter: brightness(30%);
+	min-height: 57.1em;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.02); }
+
+@keyframes pulse {
+	25% {
+		transform: scale(1.1);
+	}
+
+	75% {
+		transform: scale(.9);
+	}
+}
+
+.pulse {
+	display: inline-block;
+	color: var(--theme-color);
+}
+
+.hover-nick {
+	&:hover {
+		.pulse {
+			animation-name: pulse;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+	}
+}
+
+// .card-container {
+// 	margin: 0 auto;
+// 	width: 90%;
+// 	height: 50rem;
+// 	// background-color: aqua;
+// }
+
+.card-align {
+	display: flex;
+}
+
+.margin-cards {
+	margin-left: 4.0%;
+	margin-right: 4.0%;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.no-margin {
+	margin: 0 auto !important;
+}
+
+.navbar-color {
+	background: rgb(69,69,69);
+	background: radial-gradient(circle, rgba(69,69,69,1) 0%, rgba(42,42,42,1) 50%, rgba(50,50,50,1) 100%);
+}
+
+.card-item-anime {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #F1F1F1;
+	color: black;
+	opacity: 0.8;
+	transition: 0.5s;
+	height: 180px;
+	box-shadow: 0px 10px 10px 0px $anime-color;
+	&:hover {
+		opacity: 1.0;
+		box-shadow: 0px 0px 50px 0px $anime-color;
+		cursor: pointer;
+	}
+}
+
+.card-item-movie {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #F1F1F1;
+	color: black;
+	opacity: 0.8;
+	transition: 0.5s;
+	height: 180px;
+	box-shadow: 0px 10px 10px 0px $movie-color;
+	&:hover {
+		opacity: 1.0;
+		box-shadow: 0px 0px 50px 0px $movie-color;
+		cursor: pointer;
+	}
+}
+
+.card-item-princess {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #F1F1F1;
+	color: black;
+	opacity: 0.8;
+	transition: 0.5s;
+	height: 180px;
+	box-shadow: 0px 10px 10px 0px $princess-color;
+	&:hover {
+		opacity: 1.0;
+		box-shadow: 0px 0px 50px 0px $princess-color;
+		cursor: pointer;
+	}
+}
+
+.card-item-sport {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #F1F1F1;
+	color: black;
+	opacity: 0.8;
+	transition: 0.5s;
+	height: 180px;
+	box-shadow: 0px 10px 10px 0px $sport-color;
+	&:hover {
+		opacity: 1.0;
+		box-shadow: 0px 0px 50px 0px $sport-color;
+		cursor: pointer;
+	}
+}
+
+.card-item-serie {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #F1F1F1;
+	color: black;
+	opacity: 0.8;
+	transition: 0.5s;
+	height: 180px;
+	box-shadow: 0px 10px 10px 0px $serie-color;
+	&:hover {
+		opacity: 1.0;
+		box-shadow: 0px 0px 50px 0px $serie-color;
+		cursor: pointer;
+	}
+}
+
+.card-item-heroes {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #F1F1F1;
+	color: black;
+	opacity: 0.8;
+	transition: 0.5s;
+	height: 180px;
+	box-shadow: 0px 10px 10px 0px $heroes-color;
+	&:hover {
+		opacity: 1.0;
+		box-shadow: 0px 0px 50px 0px $heroes-color;
+		cursor: pointer;
+	}
+}
+
+.card-item-games {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #F1F1F1;
+	color: black;
+	opacity: 0.8;
+	transition: 0.5s;
+	height: 180px;
+	box-shadow: 0px 10px 10px 0px $games-color;
+	&:hover {
+		opacity: 1.0;
+		box-shadow: 0px 0px 50px 0px $games-color;
+		cursor: pointer;
+	}
+}
+
+.card-item-music {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #F1F1F1;
+	color: black;
+	opacity: 0.8;
+	transition: 0.5s;
+	height: 180px;
+	box-shadow: 0px 10px 10px 0px $music-color;
+	&:hover {
+		opacity: 1.0;
+		box-shadow: 0px 0px 50px 0px $music-color;
+		cursor: pointer;
+	}
+}
+
+.spacing-h {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.spacing-v {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.pull-right {
+	float: right;
+}
+
+.theme-anime {
+	background: $anime-color;
+	padding: 20px;
+}
+
+.modal-theme-color {
+	background-color: var(--theme-color) !important;
+}

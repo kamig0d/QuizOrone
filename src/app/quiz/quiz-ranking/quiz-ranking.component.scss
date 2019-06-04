@@ -1,0 +1,92 @@
+.flex {
+    display: flex;
+    min-height: 715px;
+    max-width: 1500px;
+    margin: auto;
+    justify-content: center;
+}
+
+.space {
+    min-height: 500px
+}
+
+.container {
+    background-repeat: no-repeat;
+	opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    
+    padding: 0%;
+    display: table;
+    margin-top: 20px;
+    cursor: pointer;
+    max-height: 360px;
+    max-width: 300px;
+    color: lighten(white, 30%) !important;
+    border-radius: 2%;
+    margin-right: 25px;
+    margin-left: 25px;
+    transition: 1s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.container-list {
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(175, 175, 175, 0.8);
+    transition: 0.8s;
+    &:hover {
+        background-color: rgba(175, 175, 175, 0);
+    }
+}
+
+.padding-h {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.title-category {
+    text-align: center;
+}
+
+.title-h4 {
+    margin: 0%;
+    background-color: rgba(175, 175, 175, 0.8);
+    color: #FFFF00;
+}
+
+.sport-background {
+    background-image: url(./../../../images/sport.jpg);
+}
+
+.anime-background {
+    background-image: url(./../../../images/naruto.jpg);
+}
+
+.serie-background {
+    background-image: url(./../../../images/serie.jpg);
+}
+
+.movie-background {
+    background-image: url(./../../../images/stormtrooper.jpg);
+}
+
+.princess-background {
+    background-image: url(./../../../images/princess.jpg);
+}
+
+.heroes-background {
+    background-image: url(./../../../images/captain-america.jpg);
+}
+
+.games-background {
+    background-image: url(./../../../images/mario-odyssey.jpg);
+}
+
+.music-background {
+    background-image: url(./../../../images/michel-jackson.jpg);
+}

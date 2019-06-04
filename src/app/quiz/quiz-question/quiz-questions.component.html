@@ -1,0 +1,27 @@
+<div class="space">
+    <div *ngIf="!finishQuiz" class="flex">
+        <div class="container">
+            <div class="theme-title">
+                <h1>{{ categorieSelected }}</h1>
+            </div>
+            <div class="question">
+                <h4>{{ currentQuestion }}</h4>
+            </div>
+            <div class="answers" *ngFor="let answer of currentAnswers" (click)="ConfirmQuestion(answer, scoreModal)">
+                <p style="margin: auto">{{ answer }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #scoreModal>
+    <div style="text-align: center">
+        <div class="modal-header">
+            <h4>Parabéns {{ playerName }}! Sua pontuação foi de:</h4>
+        </div>
+        <div class="modal-header">
+            <p>Score</p>
+            <p>{{score}} / {{count}}</p>
+        </div>
+    </div>
+</ng-template>

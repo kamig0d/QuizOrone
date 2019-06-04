@@ -1,0 +1,25 @@
+<div class="space">
+    <div class="flex row row-centered">
+        <div class="container" *ngFor="let categorie of rankingList" [ngClass]="{
+                'sport-background': categorie.id === 4,
+                'anime-background': categorie.id === 1,
+                'serie-background': categorie.id === 5,
+                'movie-background': categorie.id === 2,
+                'princess-background': categorie.id === 3,
+                'heroes-background': categorie.id === 6,
+                'games-background': categorie.id === 7,
+                'music-background': categorie.id === 8
+            }"
+        >
+            <div class="title-category">
+                <h4 class="title-h4">{{ categorie.texto }}</h4>
+            </div>
+            <span *ngFor="let item of categorie.rankings">
+                <div class="container-list pt-1 padding-h">
+                    <span>{{item.nome}}</span>
+                    <span>{{item.qtQuestoes}}</span>
+                </div>
+            </span>     
+        </div>
+    </div>
+</div>
