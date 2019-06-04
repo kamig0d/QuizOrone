@@ -7,3 +7,7 @@ button {
     border-color: black !important;
     color: #F1F1F1 !important;
 }
+
+* {
+    box-sizing: border-box;
+}

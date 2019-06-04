@@ -9,6 +9,11 @@
 // $games-color: #FF9C00;
 // $music-color: #FF1493;
 
+.control-body {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
 .home {
 	padding: 2.22% !important;
 	background-image: url(../../images/press-start.jpg);
@@ -17,7 +22,7 @@
   	background-position: center;
 	background-size: cover; 
 	margin-top: 55px;
-	min-height: 57.1em;
+	flex: 1;
 	filter: brightness(30%);
 }
 
@@ -30,7 +35,7 @@
 	background-size: cover; 
 	margin-top: 55px;
 	filter: brightness(30%);
-	min-height: 57.1em;
+	flex: 1;
 }
 
 .questions {
@@ -42,7 +47,7 @@
 	background-size: cover; 
 	margin-top: 55px;
 	filter: brightness(30%);
-	min-height: 57.1em;
+	flex: 1;
 }
 
 .grow { transition: all .2s ease-in-out; }
