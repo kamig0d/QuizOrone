@@ -4,8 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { BsModalRef, BsModalService, ComponentLoaderFactory, PositioningService, ModalBackdropComponent } from 'ngx-bootstrap';
-import { ModalContainerComponent } from 'ngx-bootstrap/modal';
+import { BsModalRef, BsModalService, ComponentLoaderFactory, PositioningService, ModalModule } from 'ngx-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,8 +18,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     QuizComponent,
-    ModalBackdropComponent,
-    ModalContainerComponent,
     QuizRankingComponent,
     QuizQuestionsComponent
   ],
@@ -31,7 +28,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     ToastrModule.forRoot(),
     FormsModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    ModalModule.forRoot()
   ],
   providers: [
     BsModalRef,
@@ -41,13 +39,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     QuizService,
     HttpClient
   ],
-  entryComponents: [
-    ModalBackdropComponent,
-    ModalContainerComponent    
-  ],
+  entryComponents: [],
   bootstrap: [AppComponent],
   exports: [
-    ModalBackdropComponent,
     HttpClientModule
   ]
 })

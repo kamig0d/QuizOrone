@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot --prod"
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -28,7 +28,7 @@
     "express": "^4.17.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
-    "ngx-bootstrap": "^4.3.0",
+    "ngx-bootstrap": "^3.0.1",
     "ngx-toastr": "^10.0.4",
     "path": "^0.12.7",
     "rxjs": "6.3.3",
