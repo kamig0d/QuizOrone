@@ -23,11 +23,11 @@ export class QuizService  {
         return this.http.get(this.urlThemes);
     }
 
-    saveRanking(rank: Rank): Observable<Rank> {
-        return this.http.post<Rank>(this.urlAdd, rank, {
-            headers: new HttpHeaders({
-                'Content-Type' : 'application/json'
-            })
+    saveRanking(rank: Rank) {
+        return this.http.post(this.urlAdd, {
+            idTema: rank.id_tema,
+            nome: rank.nome,
+            qtQuestoes: rank.qtQuestoes
         });
     }
 
