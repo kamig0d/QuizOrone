@@ -24,7 +24,6 @@ export class QuizService  {
     }
 
     saveRanking(rank: Rank): Observable<Rank> {
-        console.log(rank);
         return this.http.post<Rank>(this.urlAdd, rank, {
             headers: new HttpHeaders({
                 'Content-Type' : 'application/json'
